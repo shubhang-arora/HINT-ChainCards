@@ -21,6 +21,13 @@ class RedirectIfAuthenticated
             return redirect('/home');
         }
 
+
+        /*
+         * return next
+         */
         return $next($request);
+
+
+
     }
 }
